@@ -1,5 +1,24 @@
 # Workout-Tracker
 
+## Getting Started
+
+**Prerequisites:** [Node.js](https://nodejs.org), the [Expo Go](https://expo.dev/go) app installed on your Android device, and a terminal.
+
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm start
+```
+
+Once the dev server is running:
+- **Android (Expo Go):** Scan the QR code in the terminal with the Expo Go app
+- **Web:** Press `w` in the terminal to open in the browser
+- **Android emulator:** Press `a` in the terminal (requires Android Studio)
+
+---
+
 This is a lightweight, no fluff workout tracking application built in React Native to be compiled netively to mobile. This app is not meant to help you build a workout, help you with form, or give you a database of exercises; it assumes that you already know what you're doing, have a plan, and want a simple and hyper customizable tracker that can fit your specific needs. 
 
 ## Features

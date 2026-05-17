@@ -90,6 +90,9 @@ That being said, you can easily start to build a "local" database of exercises. 
 
 **Set**
 - *Note: Sets are _weird_. There are myo match, cluster, drop, fail, partial, time-based, supersets, AMRAP, etc. Some Sets may have "custom" types that are user-defined. Adding new sets, by default, mimics the last added set to make general additions easier, though new sets can be customized (rep ranges, types, etc.)*
+    - myo match, cluster, drop sets are "compound" style sets
+    - fail, partial, AMRAP sets can be separate or "compound" style sets
+    - custom, time-based sets can be custom set. 
 - Each Set must have a SetType which defaults to the "Repetitions" type.
 - Each Set may have a note defiend upon tracking 
     - *Note: This is for things like identifying personal reminders and notes, like what grips work or have been experimented with, what the user did different to the last time this set was recorded, and other personal notes that are worth keeping track of.*

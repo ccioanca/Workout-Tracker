@@ -425,7 +425,7 @@ EAS Build will be configured when a distributable APK or iOS build is needed. No
 - Workout and Exercise template builder within a day
 - Set template builder with type selector and config
 
-### Phase 3 — Active Session *(pending UI/UX design)*
+### Phase 3 — Active Session
 - Session tracking data layer and Zustand session slice
 - Session start/complete/abandon logic
 - Exercise autocomplete from `exercise_definitions`
@@ -436,16 +436,23 @@ EAS Build will be configured when a distributable APK or iOS build is needed. No
 - Affected muscles editor
 - Search and filter
 
-### Phase 5 — Reporting
+### Phase 5 - UI/UX Refinement & Polish
+- App theme settings (light/dark/system)
+- App animations & fluid UI polishing
+- App preferences (weight unit, theme)
+- Responsive layout polish for web/tablet
+    - Identifying best practices for mobile vs web, and breaking out components into constituent components while allowing for the same functionality. 
+
+### Phase 6 — Reporting
 - 1RM and 10RM calculations per exercise
 - Volume over time per muscle group
 - Program-level stats and PR detection
 - Session history
 - Chart/visualization library TBD
-
-### Phase 6 — Settings & Polish
-- App preferences (weight unit, theme)
+- Export utility (to allow use of data out-of-app, or save backups) TBD
+    - Potential auto-export to locations (such as google sheets)
 - JSON backup export and import/restore
-- Responsive layout polish for web/tablet
 
+### Phase 7 - Utility and QoL
+- Weight tracking as flat numbers vs calculated "plates" (To allow for simpler calculation of what to load on a bar)
 

@@ -164,6 +164,12 @@ export interface Exercise {
   /** 1 = true, 0 = false (SQLite boolean) */
   is_completed: number;
   order: number;
+  /**
+   * Null = permanent template exercise.
+   * Non-null = created ad-hoc during this session; cascade-deleted if the session is abandoned.
+   * At session completion the user can promote ad-hoc exercises to the template (set to null).
+   */
+  session_id: UUID | null;
 }
 
 export interface Set {
@@ -173,6 +179,18 @@ export interface Set {
   /** JSON-serialized SetConfig */
   config: string;
   order: number;
+  /**
+   * Null = permanent template set.
+   * Non-null = created ad-hoc during this session; cascade-deleted if the session is abandoned.
+   * At session completion the user can promote ad-hoc sets to the template (set to null).
+   */
+  session_id: UUID | null;
+  /**
+   * Null = standalone set.
+   * Non-null UUID = this set belongs to a compound block. All sets within the same exercise
+   * sharing this value are executed back-to-back before the rest period.
+   */
+  compound_group_id: UUID | null;
 }
 
 /** Set with config already parsed */

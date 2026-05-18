@@ -215,6 +215,7 @@ A trackable exercise instance inside a specific workout. References an `exercise
 | `superset_partner_id` | `text` | FK → `exercises.id` (nullable) |
 | `is_completed` | `integer` (boolean) | Required; tracks whether the exercise was finished in a session |
 | `order` | `integer` | Display order within the workout |
+| `session_id` | `text` | FK → `workout_sessions.id` (nullable). Null = permanent template exercise. Non-null = created ad-hoc during a live session; cascade-deleted if the session is abandoned. Promoted to template by setting null at session completion. |
 
 #### `sets`
 Defines the intended configuration for a set in a workout template.
@@ -226,6 +227,8 @@ Defines the intended configuration for a set in a workout template.
 | `set_type` | `text` | Enum string. Built-in values below; free string for custom types |
 | `config` | `text` (JSON) | Type-specific configuration (see Set Types section below) |
 | `order` | `integer` | Display order within the exercise |
+| `session_id` | `text` | FK → `workout_sessions.id` (nullable). Null = permanent template set. Non-null = created ad-hoc during a live session; cascade-deleted if the session is abandoned. Promoted to template by setting null at session completion. |
+| `compound_group_id` | `text` (UUID) | Nullable. Sets within the same exercise sharing this value are executed as a compound block (back-to-back before rest). Null = standalone set. |
 
 **Built-in `set_type` values:**
 - `straight` — Standard sets with reps and weight

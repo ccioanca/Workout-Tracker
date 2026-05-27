@@ -13,11 +13,11 @@
   "dependencies": {
     "expo": "^56.0.5",
     "expo-router": "^56.2.7",
-    "expo-sqlite": "~16.0.10",
-    "expo-status-bar": "~3.0.9",
+    "expo-sqlite": "~56.0.4",
+    "expo-status-bar": "~56.0.4",
     "nativewind": "^4.2.3",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "react-native": "^0.85.3",
     "react-native-web": "^0.21.0",
     "zustand": "^4.5.7"
@@ -25,14 +25,14 @@
   "devDependencies": {
     "@eslint/compat": "^2.1.0",
     "@eslint/eslintrc": "^3.3.5",
-    "@types/react": "~19.1.0",
+    "@types/react": "~19.2.14",
     "eslint": "^10.3.0",
-    "eslint-config-expo": "^55.0.1",
+    "eslint-config-expo": "~56.0.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "prettier": "^3.8.3",
     "tailwindcss": "^3.4.19",
-    "typescript": "~5.9.2"
+    "typescript": "~6.0.3"
   },
   "private": true
 }

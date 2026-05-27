@@ -1,9 +1,5 @@
-import { Text, View } from 'react-native';
+import ProgramsScreen from '../../src/screens/ProgramsScreen';
 
 export default function HomeScreen() {
-  return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-lg font-bold">Workout Tracker</Text>
-    </View>
-  );
+  return <ProgramsScreen />;
 }
